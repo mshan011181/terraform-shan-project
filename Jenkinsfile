@@ -1,6 +1,6 @@
 pipeline{
     agent {
-        label 'default'
+        label 'master'
     }
     tools {
         terraform 'terraform-11'
