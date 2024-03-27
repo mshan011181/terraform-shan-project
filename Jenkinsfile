@@ -20,13 +20,12 @@ pipeline{
         stage('Terraform init'){
             steps{
                 sh 'terraform init'
-            }
+             }
         }
         stage('Terraform Destroy'){
             steps{
                 sh 'terraform destroy --auto-approve'
-                }
+                 }
             }
-        }
-    }
-}
+     }
+ 
